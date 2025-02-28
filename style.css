@@ -125,7 +125,7 @@ fieldset{
 }
 
 legend, .disclaimer{
-    margin-left: 1vw;
+    margin-left: 2vw;
 }
 
 button{
@@ -140,11 +140,25 @@ button{
     margin-bottom: 2vh;
 }
 
-
-input::after:invalid{
-    border-color: red;
+input{
+    border: 2px #fff;
+    outline: none;
+    border-radius: 10px;
+    height: 1.8rem;
 }
 
-input:focus{
-    border-color: blue;
+
+input:focus {
+	border: 2px solid rgb(30, 0, 255);
 }
+
+
+input:invalid{
+    background-color: rgb(255, 135, 135);
+    opacity: 1;
+}
+
+input:valid{
+    background-color: #80f579;
+}
+
