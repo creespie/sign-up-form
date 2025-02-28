@@ -1,7 +1,51 @@
-*{
-    padding: 0;
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
     margin: 0;
-}
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
 
 .main{
     display: flex;
@@ -34,10 +78,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 5%;
-    padding: 10px;
-    
-    background-color: rgb(255, 254, 219);
-    
+    background-color: rgb(222, 158, 158);
 }
 
 a{
@@ -52,6 +93,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top:18vh;
 }
 
 h1{
@@ -66,4 +109,42 @@ h1{
 
 .credits{
     justify-self: flex-end;
+}
+
+
+fieldset{
+    border: 10px;
+    display: flex;
+    gap: 2vw;
+    margin-left: 1vw;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+legend, .disclaimer{
+    margin-left: 1vw;
+}
+
+button{
+    border-radius: 20px;
+    border: 0px;   
+    background-color: rgb(134, 157, 179); 
+   padding: 10px 45px 10px 45px; 
+}
+
+.formBox{
+    box-shadow: 0px 9px 9px -2px #E5E3E0, 0px 0px 9px -2px #E5E3E0;
+    margin-bottom: 2vh;
+}
+
+
+input::after:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border-color: blue;
 }

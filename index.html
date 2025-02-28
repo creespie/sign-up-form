@@ -8,48 +8,62 @@
 </head>
 <body>
     <div class="main">
-        <div class="sideContainer">
-            <div></div>
+        <div class="sideContainer"> 
             <div class="banner">
                 <img src="assets/odin-lined.png" alt="odin logo" class="logo">
                 <h1>odin</h1>
             </div>
-            <div></div>
             <div class="credits">Photo by <a href="https://unsplash.com/@bharath9110?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bharath Kumar</a> on <a href="https://unsplash.com/photos/a-bunch-of-white-balls-sitting-on-top-of-each-other-cudX3kfa4kU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </div>
             
         </div>
         <div class="content">
-            <div>
-                This is not a real online service, please don' provide any real information! <br>Go on and test it out!
+            <div class="disclaimer">
+                This is not a real online service, please don' provide any real information! <br>
+                <br>
+                Go on and test it out!
             </div>
             <div>
                 <form action="">
-                    <legend>Let's do this!</legend>
-                    <fieldset>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="Name" required>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" required>
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" id="phone">
-                    </fieldset>   
-                    <fieldset>
-                        <label for="password">password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="checkPassword">confirm password</label>
-                        <input type="checkPassword" name="checkPassword" id="checkPassword">
-                    </fieldset>
+                    <div class="formBox">
+                        <legend>Let's do this!</legend>
+                        <fieldset>
+                            <div class="column">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="Name" required>
+                            </div>
+                            <div class="column">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" name="lastName" id="lastName" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="column">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="column">
+                                <label for="phone">Phone number:</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="column">
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div class="column">
+                                <label for="checkPassword">Confirm password:</label>
+                                <input type="checkPassword" name="checkPassword" id="checkPassword">
+                            </div>
+                        </fieldset>
+                    </div>
                     <div>
-                        <button>Create Account</button>
+                        <button class="disclaimer">Create Account</button>
                     </div>
                 </form>
             </div>
-            <div>
+            <div class="disclaimer">
                 already have an account? <a href="">Log in</a> 
             </div>
         </div>
